@@ -1,0 +1,531 @@
+/*
+ Theme Name:   rtTheme
+ Theme URI:    http://www.wpbeginner.com/
+ Description:  An assignment theme By Jayesh Mule
+ Author:       rtCamp
+ Author URI:   http://www.techpram.com
+ Version:      1.0
+*/
+/*Main Style*/
+
+body
+{
+line-height:1.5;
+background:url(images/body-bg.jpg) repeat-x;
+}
+ol,ul,li
+{
+list-style:none;
+}
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#header ol,ul
+{
+ list-style:none;
+}
+
+/*Header Background*/
+#header
+{
+background:url(images/header-bg.jpg) no-repeat;
+z-index:10000;
+}
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+/*Logo Style*/
+#header h1
+{
+
+width:277px;
+height:85px;
+float:left;
+}
+#header h1 a
+{
+width:277px;
+height:85px;
+display:block;
+}
+
+/*Navigation Style*/
+.main-nav li,.main-nav ul
+{
+display:inline;
+
+}
+.main-nav a
+{
+	padding:0 10px 0 10px;
+	text-decoration:none;
+	line-height:50px;
+	font-family:Tahoma;
+Font-size:15px;
+color:#333;
+}
+.main-nav a:hover
+{
+color:#993408;
+}
+.main-nav
+{
+padding-left:400px;
+}
+.main-nav ul ul a
+{
+	width:135px;
+	line-height:40px;
+	padding:0 20px;
+	display:block;
+
+}
+.main-nav ul li
+{
+	position:relative;
+	float:left;
+	z-index:10000;
+}
+.main-nav ul ul
+{
+	position:absolute;
+	top:-9999999px;
+	left:0;
+	opacity:0;
+	text-align:left;
+	box-shadow:2px 2px 0 #b5b5b5;
+	z-index:1000;
+}
+.main-nav ul li:hover > ul
+{
+	position:absolute;
+	top:100%;
+	opacity:1;
+	background:#fff;
+	z-index:10000;
+}
+#show-nav
+{
+display:none;
+}
+#menu-icon {
+
+
+	width: 40px;
+	height: 40px;
+	background: url(images/menu-icon.png) center;
+margin-top:30px;
+margin-left: 10px;
+}
+
+
+/* Wrapper Style*/
+#wrap1
+{
+padding-top:22px;
+padding-bottom:15px;
+position:relative;
+display:block;
+margin-bottom:60px;
+width:960px;
+height:300px;
+}
+/*slider style*/
+#slider
+{
+width:960px;
+height:300px;
+position:absolute;
+display:block;
+overflow:hidden;
+}
+
+.info
+{
+padding:20px;
+width:400px;
+height:280px;
+display:block;
+position:relative;
+background:#000;
+opacity:0.6;
+z-index:999;
+font-family:Tahoma;
+	font-size:14px;
+	color:#ccc;
+	bottom:292px;
+	left:52%;
+}
+.info .game-title
+{
+position:relative;
+		text-decoration:none;
+		display:block;
+		margin-top:30px;
+		font-family:Georgia;
+		font-size:24px;
+		color:#fff;
+}
+#controller
+{
+position:absolute;
+	top:30px;
+	bottom:10px;
+	left:94%;
+	padding:10;
+	color:#ccc;
+	width:5%;
+	background:#000;
+	opacity:.6;
+	float:left;
+	z-index:999;
+	height:280px;
+}
+#next
+{
+background: url(images/slider-bottom-pagination.png) center;
+width:19px;
+height:16px;
+display:block;
+position:absolute;
+z-index:999;
+bottom:0;
+left:12px;
+}
+#prev
+{
+transform:rotate(180deg);
+left:12px;
+width:19px;
+height:16px;
+background: url(images/slider-bottom-pagination.png) center;
+display:block;
+position:absolute;
+z-index:999;
+}
+
+#next:hover
+{
+background: url(images/slider-bottom-pagination-hov.png) center;
+width:19px;
+height:16px;
+display:block;
+position:absolute;
+z-index:999;
+bottom:0;
+left:12px;
+}
+#prev:hover
+{
+transform:rotate(180deg);
+left:12px;
+width:19px;
+height:16px;
+background: url(images/slider-bottom-pagination-hov.png) center;
+display:block;
+position:absolute;
+z-index:999;
+}
+#pager
+{
+margin-top:100px;
+width:100%;
+text-align:center;
+display:block;
+position:absolute;
+cursor:pointer;
+z-index:999;
+}
+#pager a
+{
+font-size:.0em;
+color:transparent;
+transform:rotate(90deg);
+width:10px;
+height:10px;
+display:inline-block;
+position:relative;
+border: 1px solid #FFF;
+border-radius:20px;
+background:#FFF;
+margin:10px;
+}
+#pager a:hover
+{
+font-size:.0em;
+color:transparent;
+transform:rotate(90deg);
+width:10px;
+height:10px;
+display:inline-block;
+position:relative;
+border: 1px solid #993408;
+border-radius:20px;
+background:#993408;
+margin:10px;
+}
+#Wrap2
+{
+border-style: solid;
+    border-width: 1px;
+    border-color: #cbcbcb;
+}
+#featuredpage
+{
+padding:10px 10px 10px 10px;
+}
+#sub-page-link
+{
+background:#f8f8f8;
+height: 262px;
+padding-top: 10px;
+border-style: solid;
+border-width: 1px;
+border-color: #f8f8f8;
+font-family:Georgia;
+Font-Size:17px;
+color:#993408;
+}
+#sub-page-link ul
+{
+list-style:none;
+padding-left:0;
+
+}
+#sub-page-link ul li
+{
+padding:0px 0px 8px 5px;
+width:240px;
+height:30px;
+margin-top:30px;
+}
+#sub-page-link ul li:hover
+{
+background:url(images/side_hover.png);
+background-position:50%;
+color:#fff;
+width:240px;
+height:30px;
+}
+#sub-page-link ul li a
+{
+color:#993408;
+}
+#sub-page-link ul li a:hover
+{
+
+color:#fff;
+}
+#featuretitle
+{
+font-family:Georgia;
+Font-Size:15px;
+color:#000;
+}
+#featuredesc
+{
+font-family:Tahoma;
+Font-Size:13px;
+color:#333;
+}
+/*wrap3-Widgets style*/
+#wrap3
+{
+background:#f8f8f8;
+margin-top: 20px;
+
+}
+
+#full-width
+{
+margin: 0 -100%;
+padding: 0.5em 100%;
+background: #f8f8f8;
+border-bottom-style:solid;
+border-top-style:solid;
+border-width: 1px;
+border-color:#e3e3e3;
+}
+#full-width ul li
+{
+list-style:none;
+}
+.widgettitle
+{
+font-family:Tahoma;
+Font-size:15px;
+font-weight: bold;
+color:#888;
+border-bottom-style: dashed;
+border-width: 1px;
+border-color:#888;
+text-align:center;
+padding:5px;
+}
+#text-2,#widget2,#widget3,#widget4
+{
+font-family:Tahoma;
+Font-size:13px;
+color:#888;
+}
+#text-2 ul li
+{
+padding:5px 0px 5px 0px;
+list-style-image: url(images/sidebar-bullet.jpg);
+}
+#text-2 ul li:hover
+{
+list-style-image: url(images/sidebar-bullethover.jpg);
+}
+#text-2 ul li a:hover
+{
+color:#993408;
+}
+
+#widget2 ul li
+{
+padding:5px 0px 5px 0px;
+
+}
+#socialmedia
+{
+	padding-top:14px;
+}
+#widget3 ul li
+{
+padding:5px 0px 5px 0px;
+}
+#widget3 ul li img:last-child{display:none}
+#widget3 ul li:hover img:first-child{display:none}
+#widget3 ul li:hover img:last-child{display:inline-block}
+#menu-security li a
+{
+font-family:Tahoma;
+Font-size:13px;
+color:#888;
+}
+#menu-security li a:hover
+{
+	color:#993408;
+}
+/* Footer Style*/
+#footer ul
+{
+overflow:hidden;
+padding-left:1px;
+}
+#footer ul li a
+{
+float:left;
+margin-left:20px;
+margin-top:10px;
+Font-family:Tahoma;
+Font-size:13px;
+color:#333;
+}
+#footer a:hover
+{
+color:#993408;
+}
+#copyright
+{
+Font-family:Tahoma;
+Font-size:13px;
+color:#999;
+padding-left:15px;
+}
+#footer h1
+{
+width:277px;
+height:85px;
+
+float:right;
+}
+/*Responsive Style*/
+@media only screen and  (max-width : 640px) {
+
+.featured-game  .caption
+	{
+		width:85%;
+		opacity:0.70;
+	}
+#wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+	#header
+	{
+
+		position: absolute;
+
+	}
+	#menu-icon {
+
+		display:inline-block;
+
+
+	}
+
+	#header ul, #header:active ul {
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+
+	}
+
+	#header li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		height:10px;
+
+	}
+	#header ul li a
+	{
+		float:left;
+		margin-top:5px;
+		margin-bottom:5px
+	}
+	#header:hover ul {
+
+		display: block;
+         width:140px;
+		 height:300px;
+		 margin-right:80px;
+
+	}
+
+
+}
+
+/*Menu Responsive*/
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+.main-nav
+{
+display:none;
+}
+#show-nav
+{
+display:block;
+}
+}
